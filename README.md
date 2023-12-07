@@ -9,7 +9,7 @@ Creation of a toolkit as a library that enables the easy use of some AI models
 such as [Llama2](https://github.com/facebookresearch/llama) and [Stable Diffusion](https://github.com/CompVis/stable-diffusion), and that can be extended with additional AI models.<br/>
 You will be able to use the models you installed through the library that is being developed here.
 
-This project uses Python *3.11.4*, [Llama2](https://github.com/facebookresearch/llama) and [Stable Diffusion](https://github.com/CompVis/stable-diffusion) are included in the base installation.
+This project uses Python *3.9.2*, [Llama2](https://github.com/facebookresearch/llama) and [Stable Diffusion](https://github.com/CompVis/stable-diffusion) are included in the base installation.
 
 
 ## Members 
@@ -26,11 +26,15 @@ This project uses Python *3.11.4*, [Llama2](https://github.com/facebookresearch/
 
 ## Installation
 
-
+There is a folder for manual installation named `manual installations` in the root of the project. You can find the installation instructions (that have been done) for each OS in this folder.
 
 ## Use our project 
 
+In development... ⚙
+
 ## Screenshots 
+
+In development... ⚙
 
 ## Issues 
 If you have any issues, please refer to the "issues" page and don't hesitate to create a new topic about your problem.
