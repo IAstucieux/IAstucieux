@@ -25,6 +25,7 @@ This may vary from one computer to another: you'll need to test with python3 or 
 8 - Create a 7B folder and copy all the contents of the models folder into 7B
 
 9 - Your 7B folder should look like this: 
+
 ![llama2-folder-7b](https://i.ibb.co/tpd33n1/llama2-tuto1.png)
 
 10 - Clone the following directory: 
