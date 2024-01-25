@@ -50,6 +50,13 @@ It is possible to retrieve the results from the AI Llama and then process them a
 
 here is a little overview of what you get by using our library : 
 
+- Story about a little fish that sees something shining in the water
+![prompt story 1](imgs/prompt_poissons.png)
+![fish story 1](imgs/poissons_case_1.png) ![fish story 2](imgs/poissons_case_2.png) ![fish story 3](imgs/poissons_case_3.png)
+
+- Story about a house that experiences an earthquake : 
+![prompt story 2](imgs/prompt_tremblement_de_terre.png)
+![house story 1](imgs/tremblement_de_terre_case_1.png) ![house story 2](imgs/tremblement_de_terre_case_2.png) ![house story 3](imgs/tremblement_de_terre_case_3.png)
 
 
 
