@@ -37,7 +37,8 @@ In order to use our library, you must first launch the automatic 1111 API locall
 - The command to launch the 1111 API on Linux is: `./webui.sh --skip-torch-cuda-test --precision full --no-half --api`
 
 Then, when developing your code in Python, simply import our library and create an “ia_stucieux” project.
-It is then possible to configure the language model you wish to use by entering it in the path via the command `set_path_model_lama`, (for more details about the differents command available, you can check the file of the library located in `lib/ia-stucieux.py`)
+
+It is then possible to configure the language model you wish to use by entering it in the path via the command `set_path_model_lama`, (for more details about the differents command available, you can check the `doc.md` file and the file of the library located in `lib/ia-stucieux.py`)
 An empty “models” folder is already present on this git in order to store the different models acquired.
 
 After that, you finally have access to all the functions of our library to develop your application in Python.
