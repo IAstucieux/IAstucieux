@@ -1,12 +1,14 @@
-# IAstucieux 
+# IAstucieux • ![](https://img.shields.io/badge/License-MIT-blue)
 ![](https://img.shields.io/badge/AI-Llama2-blue)
 ![](https://img.shields.io/badge/AI-Stable%20diffusion-orange)
- Python library that allows easy use of AIs like Llama2 and Stable Diffusion and more.
 
-### What is IAstucieux ? 
+
+Python library that allows easy use of AIs like Llama2 and Stable Diffusion and more.
+
+### ❓• What is IAstucieux ? 
 IAstucieux is a project carried out as part of our 3rd year of IT BUT
 
-## Introduction
+## 📃 • Introduction
 This library allows the use of Llama2 and Stable Diffusion through the use of "Automatic 1111". We are developing a framework that allows the use of these programs locally.
 
 This project contains also the creation of a toolkit as a library that enables the easy use of some AI models
@@ -16,7 +18,7 @@ You will be able to use the models you installed through the library that is bei
 This project uses Python *3.9.2*, [Llama2](https://github.com/facebookresearch/llama) and [Stable Diffusion](https://github.com/CompVis/stable-diffusion) are included in the base installation.
 
 
-## Members 
+## 👨🏿‍👩🏻‍👧🏽‍👦🏾 • Members 
 - Charly Flu - Leader of the project and Windows part
 - Paolo Hoogland - MacOS part 
 - Evguenia Sobine - Linux part 
@@ -28,13 +30,13 @@ This project uses Python *3.9.2*, [Llama2](https://github.com/facebookresearch/l
 - Isaïe Debèze - Windows part 
 
 
-## Installation
+## ⚙️ • Installation
 
-### Windows & Mac
+### 🪟 • Windows & 🍎 • Mac
 
 To install the different AIs available, open the `installs/manuals` folder at the root of the project then choose the .md files that correspond to your OS. This folder contains all the installation instructions we have done so far for the different OS.
 
-### Linux debian based machine
+### 🐧 • Linux debian based machine
 
 We heavily advise you to use the `install_llama_a1111_linux.sh` script located in `installs/automatics` from the root of the project.
 > /!\ You need python3.9 to use our project !
@@ -48,11 +50,11 @@ Or if you don't want the .venv to be in the root of the project but somewhere el
 $> ./install_llama_a1111_linux.sh ../../../path/to/.venv
 ```
 
-### Troubleshooting
+### ⚠️ • Troubleshooting
 
 Go [here](#issues) if you have any problem.
 
-## Use our project 
+## 🖥️ • Use our project 
 
 In order to use our library, you must first launch the automatic 1111 API locally on your machine.
 
@@ -101,7 +103,7 @@ if __name__ == '__main__':
 ```
 
 
-## Screenshots 
+## 🖼️ • Screenshots 
 
 Here is a little overview of what you get by using our library : 
 
@@ -115,7 +117,7 @@ Here is a little overview of what you get by using our library :
 
 
 
-## Issues 
+## 🆘 • Issues 
 
 - If you have any issue try to use the manual installation scripts in `installs/manuals` if not already done.
 
