@@ -107,7 +107,7 @@ https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/resolve/main/mistr
 ![doss](https://i.ibb.co/bFMTtzM/doss.png)
 
 ### Launching the project 
-1 - Run the : 
+1 - Run : 
 ```bash
 ./main -m ./models/7B/ggml-model-q4_0.gguf -n 256 --repeat_penalty 1.0 --color -i -r "User:" -f prompts/chat-with-bob.txt
 eeec4125e9c7560836b4873b6f8e3025 tokenizer.model
