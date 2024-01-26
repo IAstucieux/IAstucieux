@@ -28,27 +28,52 @@ This project uses Python *3.9.2*, [Llama2](https://github.com/facebookresearch/l
 
 ## Installation
 
-To install the different AIs available, open the `installs` folder at the root of the project then choose whether you want to use the manual installation type or the automatic type by choosing the correct `manuals` or `automatics` folder. These folders contain all the installation instructions we have done so far for the different OS.
+### Windows & Mac
+
+To install the different AIs available, open the `installs/manuals` folder at the root of the project then choose the .md files that correspond to your OS. This folder contains all the installation instructions we have done so far for the different OS.
+
+### Linux debian based machine
+
+We heavily advise you to use the `install_llama_a1111_linux.sh` script located in `installs/automatics` from the root of the project.
+> /!\ You need python3.9 to use our project !
+
+To use this script you can do it either by running this command : 
+```bash
+$> ./install_llama_a1111_linux.sh
+```
+Or if you don't want the .venv to be in the root of the project but somewhere else, you can do :
+```bash
+$> ./install_llama_a1111_linux.sh ../../../path/to/.venv
+```
+
+### Troubleshooting
+
+Go [here](#issues) if you have any problem.
 
 ## Use our project 
 
 In order to use our library, you must first launch the automatic 1111 API locally on your machine.
 
-- The command to launch the 1111 API on Linux is: `./webui.sh --skip-torch-cuda-test --precision full --no-half --api`
+> The command to launch the 1111 API on Linux is:
+
+```bash
+$> ./webui.sh --skip-torch-cuda-test --precision full --no-half --api
+```
+
 
 Then, when developing your code in Python, simply import our library and create an “ia_stucieux” project.
 
-It is then possible to configure the language model you wish to use by entering it in the path via the command `set_path_model_lama`, (for more details about the differents command available, you can check the `doc.md` file and the file of the library located in `lib/ia-stucieux.py`)
+It is then possible to configure the language model you wish to use by entering it in the path via the command `set_path_model_lama`, (for more details about the differents command available, you can check the `doc.md` file and the file of the library located in `lib/ia-stucieux.py`).
 An empty “models” folder is already present on this git in order to store the different models acquired.
 
 After that, you finally have access to all the functions of our library to develop your application in Python.
 
-It is possible to retrieve the results from the AI Llama and then process them as you wish depending on your needs, for example by continuing with the use of the AI Automatic 1111 where you can pass whatever you want in the prompt.
+It is possible to retrieve the results from the Llama AI and then process them as you wish depending on your needs, for example by continuing with the use of the AI Automatic 1111 where you can pass whatever you want in the prompt.
 
 
 ## Screenshots 
 
-here is a little overview of what you get by using our library : 
+Here is a little overview of what you get by using our library : 
 
 - Story about a little fish that sees something shining in the water
 ![prompt story 1](imgs/prompt_poissons.png)
@@ -62,6 +87,8 @@ here is a little overview of what you get by using our library :
 
 ## Issues 
 
-- If you encounter some issues during the installation of llama2 or automatic1111, you can check the `HELP.md` file located in `installs/manuals/HELP.md`. This file contains a list of different errors that can be encountered with their associated solutions.
+- If you have any issue try to use the manual installation scripts in `installs/manuals` if not already done.
+
+- If you encounter some issues during the installation of llama2 or automatic1111, you can check the `HELP.md` file located in `installs/HELP.md`. This file contains a list of different errors that can be encountered with their associated solutions.
 
 - If you have any other issues, please refer to the "issues" page and don't hesitate to create a new topic about your problem.
