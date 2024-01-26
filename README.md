@@ -1,12 +1,6 @@
 # IAstucieux • ![](https://img.shields.io/badge/License-MIT-blue)
 ![](https://img.shields.io/badge/AI-Llama2-blue)
 ![](https://img.shields.io/badge/AI-Stable%20diffusion-orange)
-<<<<<<< HEAD
-=======
-
-Python library that allows easy use of AIs like Llama2 and Stable Diffusion and more.
->>>>>>> 3ba7e8965356351562f527b8755841dfe6947a8c
-
 
 Python library that allows easy use of AIs like Llama2 and Stable Diffusion and more.
 
