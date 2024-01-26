@@ -4,9 +4,6 @@ In this file you will have a list of errors that can be encountered during the i
 This document will shine some light on the possible problems, but doesn't contain every single possible answer. If you encounter a new error create an **issue**, and we'll be happy to help and make this document cover even more problems !
 
 ## Error list
-Here starts the errors list : 
-
-
 ### Pip not installed
 
 ```bash
