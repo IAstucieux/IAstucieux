@@ -1,6 +1,7 @@
 # lib setup 
 
-Ce guide explique comment utiliser les fonctions disponibles dans le dossier `lib/` et comment utiliser le modèle de génération d'images.
+This guide will help you setup the lib/ directory and its dependencies.
+This way, you'll be able to use the functions available in the `lib/` directory.
 
 ## Requirements
 
