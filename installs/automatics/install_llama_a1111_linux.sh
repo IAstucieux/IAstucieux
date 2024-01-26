@@ -19,7 +19,7 @@ printStep() {
 # Step 0 : Retrieve the user agrs and update system
 printStep 0 "Retrieve the user arguments (python version and path to venv if given) and update system if sudo rights..."
 
-python_version="3.11"
+python_version="3.9"
 venv_directory="../../.venv"
 if [ $# -ge 1 ]; then
      python_version=$1
