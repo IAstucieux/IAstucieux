@@ -1,4 +1,7 @@
-# lib/ setup 
+# lib setup 
+
+Ce guide explique comment utiliser les fonctions disponibles dans le dossier `lib/` et comment utiliser le modèle de génération d'images.
+
 ## Requirements
 
 1. tcppinglib
