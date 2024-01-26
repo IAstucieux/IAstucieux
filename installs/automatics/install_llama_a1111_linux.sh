@@ -17,13 +17,19 @@ printStep() {
 }
 
 # Step 0 : Retrieve the user agrs and update system
-printStep 0 "Retrieve the user python version if given in argument and update system if sudo rights..."
+printStep 0 "Retrieve the user arguments (python version and path to venv if given) and update system if sudo rights..."
 
 python_version="3.11"
+venv_directory="../../.venv"
 if [ $# -ge 1 ]; then
      python_version=$1
 fi
 echo -e "${GREEN}Python version that will be used for doing installation is ${python_version}${NO_COLOR}"
+
+if [ $# -ge 2 ]; then
+     venv_directory=$2
+fi
+echo -e "${GREEN}Directory for the venv environnement will be ${venv_directory}${NO_COLOR}"
 
 if sudo -v; then
      SUDO_RIGHTS=1
@@ -65,7 +71,7 @@ fi
 # Step 2 : Create a virtual env for python 
 printStep 2 "Create a virtual env for python..."
 
-if ! python${python_version} -m venv .venv; then
+if ! python${python_version} -m venv $venv_directory; then
     echo -e "${RED}Failed to install python env. Make sure that your current version of python is ${python_version} or at least is 3.9 or 3.11${NO_COLOR}"
     echo -e "${RED}Refer to the installation manual for more information.${NO_COLOR}"
     exit 1
@@ -75,7 +81,7 @@ fi
 
 # Step 3: Install needed package
 printStep 3 "Install needed package..."
-if ! .venv/bin/pip$python_version install requests Pillow tcppinglib; then
+if ! $venv_directory/bin/pip$python_version install requests Pillow tcppinglib; then
      echo -e "${RED}Failed to install needed packages, try skipping this step or manually install them.${NO_COLOR}"
      exit 1
 else
@@ -84,7 +90,7 @@ fi
 
 # Step 4: Create a virtual env for python
 printStep 4 "Create a virtual env for python..."
-if ! .venv/bin/pip$python_version install llama-cpp-python; then
+if ! $venv_directory/bin/pip$python_version install llama-cpp-python; then
      echo -e "${RED}Failed to install with pip the llama cpp package :/${NO_COLOR}"
      exit 1
 else
@@ -101,7 +107,7 @@ else
 fi
 
 # Last instructions for continue
-echo -e "${MAGENTA}\nNow, download a llama2 language model here : https://ai.meta.com/llama/ \nThen update the model path in the llama_example.py to your model path\nAnd then launch it with : \n.venv/bin/python${python_version} llama_example.py\n${NO_COLOR}"
+echo -e "${MAGENTA}\nNow, download a llama2 language model here : https://ai.meta.com/llama/ \nThen update the model path in the llama_example.py to your model path\nAnd then launch it with : \n${venv_directory}/bin/python${python_version} llama_example.py\n${NO_COLOR}"
 echo -e "${MAGENTA}\nFor Automatic1111, give rights to webui.sh then run it with preferred arguments.${NO_COLOR}"
 
 echo -e "${MAGENTA}\nRefer to the install manual for more information.${NO_COLOR}"
