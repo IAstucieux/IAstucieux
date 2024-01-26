@@ -62,10 +62,10 @@ In order to use our library, you must first launch the automatic 1111 API locall
 ```bash
 $> ./webui.sh --skip-torch-cuda-test --precision full --no-half --api
 ```
-
+> Full documention of the library is available at `lib/DOC.md`.
 
 When developing your code in Python, you need to import the our lib to be able to use its functions.
-To do this, you can check our guide "lib/GUIDE.md", which explains the requirements to do this. There are also some examples of programs that use our lib, so you can understand how to implement it.
+To do this, you can check our guide `lib/GUIDE.md` which explains the requirements to do this. There are also some examples of programs that use our lib, so you can understand how to implement it.
 
 It is then possible to configure the language model you wish to use by entering it in the path via the command `set_path_model_lama`, (for more details about the differents command available, you can check the `doc.md` file and the file of the library located in `lib/ia-stucieux.py`).
 An empty “models” folder is already present on this git in order to store the different models acquired.
