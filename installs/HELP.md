@@ -69,4 +69,29 @@ And try again :
 $> sudo apt install python3-pip
 ```
 
+### Python env not installed
+
+```bash
+The virtual environment was not created successfully because ensurepip is not
+available.  On Debian/Ubuntu systems, you need to install the python3-venv
+package using the following command.
+
+    apt-get install python3-venv
+
+You may need to use sudo with that command.  After installing the python3-venv
+package, recreate your virtual environment.
+```
+
+Or 
+```bash
+Cannot activate python venv, aborting...
+```
+
+Normally this can happen only on linux, please just do this :
+
+```bash
+sudo apt-get install python3-venv
+```
+
+
 
