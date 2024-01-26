@@ -1,16 +1,43 @@
+# Llama2 installation on Linux
 ## Requirements
 
 
-- Install python (3.11.x)
+### **Download Python 3.9.2:**
 
-
-bash
-sudo apt-get update
-sudo apt-get install python3
+Go to the official Python website to download version 3.9.2. You can do this using `wget` or a web browser. For example, to download the source file from the Python website, you can run the following command:
+```bash 
+   wget https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tgz
 ```
 
+### **Extracting the source file:**
 
-- Install pip 
+Extract the contents of the downloaded file:
+```bash
+   tar -xzvf Python-3.9.2.tgz
+```
+
+### **Local compilation and installation:**
+
+Once the source file has been extracted, you can compile and install Python 3.9.2 locally in your home directory. Make sure you have the development tools (gcc, make, etc.) installed on your system. Here's how to proceed: 
+
+a. Go to the Python 3.9.2 source directory:
+```bash
+   cd Python-3.9.2
+```
+
+b. Configure Python for local installation:
+```bash
+   ./configure --prefix=$HOME/python-3.9.2
+```
+
+This will install Python 3.9.2 in a local directory, `$HOME/python-3.9.2`. c. Compile and install Python :
+```bash
+   make
+   make install
+```
+
+### **Install pip**
+Install pip using apt-get :
 ```bash
 sudo apt-get update
 sudo apt-get install python3-pip
@@ -20,39 +47,33 @@ sudo apt-get install python3-pip
 ## Llama2 installation
 
 
-1 - Clone the project 
+### Clone the project 
 ```bash
 git clone https://github.com/ggerganov/llama.cpp
 cd llama.cpp
 ```
 
 
-2 - Build the project 
+### Build the project 
 ```bash
 make
 ```
 
 
-3 - Launch the project 
+### Launch the project 
 ```bash
 ./main -m ./models/7B/ggml-model-q4_0.gguf -n 256 --repeat_penalty 1.0 --color -i -r "User:" -f prompts/chat-with-bob.txt
 eeec4125e9c7560836b4873b6f8e3025 tokenizer.model
 ```
 
-
 When executing this command, an error appears in the terminal: 
 ![error](https://i.ibb.co/f1st0C0/erreur.png)
 To solve this problem : 
-
-
-### 1 - Use the Facebook model
-
 
 1 - Go to the models folder: 
 ```bash
 cd models/
 ```
-
 
 2 - You should see the following files: 
 ![folder](https://i.ibb.co/J5xVQxr/dossier.png)
@@ -75,8 +96,7 @@ If you've copied all the necessary files and folders, here's what your models fo
 
 
 ![archi](https://i.ibb.co/VBbd1Fj/archi.png)
-### 2 - Using a Hugging Face model 
-
+### Using a Hugging Face model 
 
 1 - Download the following model: 
 ```
