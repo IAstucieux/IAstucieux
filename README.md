@@ -61,7 +61,7 @@ $> ./webui.sh --skip-torch-cuda-test --precision full --no-half --api
 ```
 
 
-Then, when developing your code in Python, simply import our library and create an “ia_stucieux” project.
+Then, when developing your code in Python, you should import the ia_stucieux class from our lib.
 
 It is then possible to configure the language model you wish to use by entering it in the path via the command `set_path_model_lama`, (for more details about the differents command available, you can check the `doc.md` file and the file of the library located in `lib/ia-stucieux.py`).
 An empty “models” folder is already present on this git in order to store the different models acquired.
@@ -69,6 +69,33 @@ An empty “models” folder is already present on this git in order to store th
 After that, you finally have access to all the functions of our library to develop your application in Python.
 
 It is possible to retrieve the results from the Llama AI and then process them as you wish depending on your needs, for example by continuing with the use of the AI Automatic 1111 where you can pass whatever you want in the prompt.
+
+Here an example of use case for generate comics:
+```
+import ia_stucieux
+
+def main():
+    print("python main function")
+    ia = ia_stucieux.ia_stucieux()
+    ia.set_path_model_lama("~/mistral-7b-instruct-v0.1.Q5_K_M.gguf")
+    ia.set_img_path("~/comics_images")
+    ia.set_max_token(140)
+
+    story = ia.askLlama("can you describe me one short comics story about a cat that destroy everything in 3 panels? And only print it in a format like a csv file")
+    print(story)
+    
+    x = story.split(",")
+    print(x)
+
+    for index, item in enumerate(x):
+        if"".__ne__(item):
+            if "panel" not in item:
+                print(x[index])
+                ia.generateImg(x[index], f'panel{index}')
+
+if __name__ == '__main__':
+    main()
+```
 
 
 ## Screenshots 
