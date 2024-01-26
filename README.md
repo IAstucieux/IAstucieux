@@ -1,7 +1,8 @@
 # IAstucieux 
 ![](https://img.shields.io/badge/AI-Llama2-blue)
 ![](https://img.shields.io/badge/AI-Stable%20diffusion-orange)
- Python library that allows easy use of AIs like Llama2 and Stable Diffusion and more.
+
+Python library that allows easy use of AIs like Llama2 and Stable Diffusion and more.
 
 ### What is IAstucieux ? 
 IAstucieux is a project carried out as part of our 3rd year of IT BUT
