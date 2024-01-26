@@ -1,6 +1,6 @@
 # lib setup 
 
-This guide will help you setup the lib/ directory and its dependencies.
+This guide will help you setup the `lib/` directory and its dependencies.
 This way, you'll be able to use the functions available in the `lib/` directory.
 
 ## Requirements
@@ -10,6 +10,10 @@ This way, you'll be able to use the functions available in the `lib/` directory.
 Using pip, install tcppinglib
 ```bash
 pip install tcppinglib
+```
+Or 
+```bash
+pip[version] install tcppinglib
 ```
 
 ### Model
@@ -33,7 +37,14 @@ if __name__ == '__main__':
     ia.generateRandomImg()
 ```
 
+you can also choose your own path to the llama model like that : 
+```python
+ia.set_path_model_lama('../../path/to/llama/llama_model.gguf')
+```
+
 This script will generate a random image and save it in the `test/` directory.
+
+For more information, go in the `doc.md` in  the `lib/` folder.
 
 ### Run the script
 
