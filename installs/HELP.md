@@ -1,28 +1,20 @@
 # HELP !
-## Purpose of this document
-In this file you will have a list of errors you can have during the installation of llama2 or automatic1111.
-Use this document to maybe find an answer to one of your problem, `ctrl+f` your error and maybe find some answers !
 
-## I don't see my error here
-Please if you encounter a new error create an **issue**, and we'll be happy to help and make this document cover even more problems !
+In this file you will have a list of errors that can be encountered during the installation of llama2 or automatic1111.
+This document will shine some light on the possible problems, but doesn't contain every single possible answer. If you encounter a new error create an **issue**, and we'll be happy to help and make this document cover even more problems !
 
-## Errors lists
-Here's starts the errors list : 
-
-
+## Error list
 ### Pip not installed
 
 ```bash
 pip: command not found
 ```
 
-Well, it's in the name, you'll need pip to run our installations scripts, try to execute `prerequisites.sh` first.
-
-Or you can do this on linux : 
+You'll need pip to run our installation scripts. Either try to execute `prerequisites.sh` first, or execute : 
 ```bash
 $> sudo apt install python3-pip
 ```
-Or go here on windows : 
+On windows, go here  : 
 https://pip.pypa.io/en/stable/installation/ 
 
 
@@ -39,7 +31,8 @@ is only available from another source
 E: Package 'python3-pip' has no installation candidate
 ```
 
-It can be multiple reasons for that, if you're on linux try this : 
+There are many reasons that can explain this error.
+If you're on linux try this : 
 ```bash
 $> sudo apt update
 ```
@@ -48,50 +41,23 @@ $> sudo apt update
 $> sudo apt install python3
 ```
 
-Then add this lines : 
+Edit the file `/etc/apt/sources.list` :
+```bash
+$> sudo nano /etc/apt/sources.list
+```
+Then add these lines : 
 ```text
 deb http://archive.ubuntu.com/ubuntu focal universe
 deb-src http://archive.ubuntu.com/ubuntu focal universe
 ```
 
-To this file `/etc/apt/sources.list`, you can use nano like this :
-```bash
-$> sudo nano /etc/apt/sources.list
-```
 
-Then run apt update again : 
+Run apt update again : 
 ```bash
 $>sudo apt update
 ```
 
-And try again : 
+And try to install python again : 
 ```bash
 $> sudo apt install python3-pip
 ```
-
-### Python env not installed
-
-```bash
-The virtual environment was not created successfully because ensurepip is not
-available.  On Debian/Ubuntu systems, you need to install the python3-venv
-package using the following command.
-
-    apt-get install python3-venv
-
-You may need to use sudo with that command.  After installing the python3-venv
-package, recreate your virtual environment.
-```
-
-Or 
-```bash
-Cannot activate python venv, aborting...
-```
-
-Normally this can happen only on linux, please just do this :
-
-```bash
-sudo apt-get install python3-venv
-```
-
-
-
