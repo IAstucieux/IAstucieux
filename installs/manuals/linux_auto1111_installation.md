@@ -3,14 +3,12 @@
 - Python 3.9.2
 - Debian 11
 
-Installing python 3.9.2 
 ### **Download Python 3.9.2:**
 
 Go to the official Python website to download version 3.9.2. You can do this using `wget` or a web browser. For example, to download the source file from the Python website, you can run the following command:
 ```bash 
    wget https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tgz
 ```
-
 
 ### **Extracting the source file:**
 
