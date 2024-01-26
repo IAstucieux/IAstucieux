@@ -44,7 +44,7 @@ ia.set_path_model_lama('../../path/to/llama/llama_model.gguf')
 
 This script will generate a random image and save it in the `test/` directory.
 
-For more information, go in the `doc.md` in  the `lib/` folder.
+For more information, go in the `DOC.md` in  the `lib/` folder.
 
 ### Run the script
 
