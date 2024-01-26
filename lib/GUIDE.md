@@ -4,20 +4,20 @@ Ce guide explique comment utiliser les fonctions disponibles dans le dossier `li
 
 ## Requirements
 
-1. tcppinglib
+### tcppinglib
 
 Using pip, install tcppinglib
 ```bash
 pip install tcppinglib
 ```
 
-2. Model
+### Model
 
 Add the downloaded model to the `lib/models/` directory. This way, the model can be used by the `lib/` script ia_stucieux.py
 
 
 ## Usage
-1. main.py
+### main.py
 
 The main.py script is used to test the available functions and to test the model. Create a `main.py` file, import the available functions and run the script.
 
@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
 This script will generate a random image of a small dog in a park and save it in the `test/` directory.
 
-2. Run the script
+### Run the script
 
 To run the script, use the following command, depending on the main.py location:
 
