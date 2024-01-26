@@ -30,10 +30,10 @@ from ia_stucieux import ia_stucieux
 if __name__ == '__main__':
     ia = ia_stucieux()
     ia.set_img_path("./test/")
-    ia.generateRandomImg("Small dog in a park")
+    ia.generateRandomImg()
 ```
 
-This script will generate a random image of a small dog in a park and save it in the `test/` directory.
+This script will generate a random image and save it in the `test/` directory.
 
 ### Run the script
 
